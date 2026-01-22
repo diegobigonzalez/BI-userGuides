@@ -500,6 +500,7 @@
         <a href="#kpis">Key Metrics</a>
         <a href="#charts">Visualizations</a>
         <a href="#table">Data Table</a>
+		<a href="#policy">Policy Setup</a>
         <a href="#detailed">Detailed Analysis</a>
         <a href="#trends">Trends</a>
     </nav>
@@ -694,6 +695,77 @@
                 This allows you to analyze the exposure composition of each subsidiary.
             </div>
         </section>
+
+        <!-- Policy Setup Section -->
+        <section id="policy" class="section">
+            <h2 class="section-title">
+                <span class="icon">⚙️</span>
+                Policy Parameter Setup
+            </h2>
+            <p style="margin-bottom: 1.5rem;">
+                The <strong>Policy Parameter Setup</strong> panel allows you to define differentiated hedging rules 
+                by currency pair tiers. Access it by clicking the settings icon.
+            </p>
+
+            <h3 style="margin-bottom: 1rem; color: var(--text-primary);">Tier System</h3>
+            <p style="margin-bottom: 1rem;">
+                You can configure up to 3 policy levels with different parameters:
+            </p>
+
+            <div class="steps">
+                <div class="step">
+                    <h4>Tier 1 - Primary Pairs</h4>
+                    <p>Configure your most important currency pairs with specific thresholds and hedge ratios. 
+                    Typically includes pairs like EURUSD, EURGBP, EURDKK with more aggressive policies.</p>
+                </div>
+                <div class="step">
+                    <h4>Tier 2 - Secondary Pairs</h4>
+                    <p>Define rules for pairs with lower volume or intermediate priority. 
+                    May include pairs like GBPUSD, USDCHF with higher thresholds.</p>
+                </div>
+                <div class="step">
+                    <h4>Tier 3 - Other Pairs</h4>
+                    <p>Configure policies for remaining currency pairs with lower exposure. 
+                    These typically have higher thresholds before recommending hedges.</p>
+                </div>
+            </div>
+
+            <h3 style="margin: 1.5rem 0 1rem; color: var(--text-primary);">Parameters per Tier</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Currency pairs</strong></td>
+                            <td>Selection of pairs assigned to this tier</td>
+                            <td>EURUSD, EURGBP, EURDKK</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Threshold</strong></td>
+                            <td>Minimum exposure amount to generate a recommendation</td>
+                            <td>23,250,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hedging policy %</strong></td>
+                            <td>Percentage of exposure to hedge</td>
+                            <td>85.00%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box warning">
+                <strong>⚠️ Important:</strong> Changes to policy configuration immediately affect 
+                the recommendations shown. Ensure parameters reflect the approved hedging strategy.
+            </div>
+        </section>
+
 
         <!-- Detailed Analysis Section -->
         <section id="detailed" class="section">
