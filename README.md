@@ -1,4 +1,6 @@
 '''
+THE REPOSITORY IS PUBLIC!!!!!!!!!
+
 	This repository is planned to post the html files
 	that serve as user guides for the power bi dashboards
 	deployed for the client.
@@ -9,5 +11,6 @@
 		3.- Developer needs to make sure that information posted in this repo is totally generic.
 		4.- Developer should respect the file repository folder structure.
 		5.- Files posted here are not dynamic, not self service, do not replace any dashboard, arent part of platform.
-		
+	
+THE REPOSITORY IS PUBLIC!!!!!!!!!	
 '''
